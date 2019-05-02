@@ -1,0 +1,22 @@
+# ifupdown has been replaced by netplan(5) on this system.  See
+# /etc/netplan for current configuration.
+# To re-enable ifupdown on this system, you can run:
+#    sudo apt install ifupdown
+auto lo
+iface lo inet loopback
+
+auto eno1
+iface eno1 inet static
+        address 10.0.2.51
+        netmask 255.255.255.0
+        network 10.0.2.0
+        boardcast 10.0.2.255
+        gateway 10.0.2.241
+        dns-nameservers 147.8.176.15 147.8.178.15 147.8.175.12 147.8.178.10
+	dns-search cs.hku.hk
+
+auto enp3s0f0
+iface enp3s0f0 inet static
+    address  10.1.2.51
+    netmask  255.255.255.0
+    network  10.1.2.0

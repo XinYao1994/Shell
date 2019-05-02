@@ -1,0 +1,4 @@
+#!/bin/bash
+
+mount sfs1:/sharedfs01/home /home
+mount sfs1:/sharedfs01/opt.shared /opt/shared

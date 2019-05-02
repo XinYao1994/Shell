@@ -1,0 +1,5 @@
+mkdir /localfs && mkdir /localfs/xyao && cd /localfs/xyao
+cp xyao@10.0.2.241:/etc/hosts ./ && cp hosts /etc/hosts && apt install -y nfs-common
+mount sfs1:/sharedfs01/home /home && apt install -y nis autofs
+cp /home/cs/xyao/4shell/reinstall/up-install.sh ./ && ./up-install.sh && cp /home/cs/xyao/4shell/reinstall/re-install.sh ./
+./re-install.sh no
